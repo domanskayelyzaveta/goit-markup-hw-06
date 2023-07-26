@@ -997,7 +997,7 @@ fill: var(--purple-color)
     opacity: 0;
 }
 
-.checkbox-policy:checked + .checkbox-span .checkbox-icon {
+.checkbox-policy:checked + .checkbox-label .checkbox-span {
     background-color: var(--ocean-button-color);
     border: none;
     fill: var(--additional-background-color);

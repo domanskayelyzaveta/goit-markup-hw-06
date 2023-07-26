@@ -912,7 +912,7 @@ fill: var(--additional-background-color);
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -941,6 +941,7 @@ fill: var(--purple-color)
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.48px;
+    border-radius: 4px;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
@@ -961,11 +962,16 @@ fill: var(--purple-color)
 
 .checkbox-span {
     margin-top: 16px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid var(--lightslate-color, rgba(46, 47, 66, 0.40));
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+
 }
 
 .checkbox-label {
@@ -973,7 +979,7 @@ fill: var(--purple-color)
     margin-top: 16px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--lightslate-color);
 }

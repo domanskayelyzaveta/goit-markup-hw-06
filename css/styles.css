@@ -801,6 +801,7 @@ fill: var(--additional-background-color);
     left: 0;
     top: 0;
     background: rgba(46, 47, 66, 0.40);
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop {

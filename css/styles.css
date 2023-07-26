@@ -997,15 +997,10 @@ fill: var(--purple-color)
     opacity: 0;
 }
 
-.checkbox-policy:checked + .checkbox-span {
+.checkbox-policy:checked + .checkbox-span .checkbox-icon {
     background-color: var(--ocean-button-color);
     border: none;
     fill: var(--additional-background-color);
-}
-
-.checkbox-policy:checked + .checkbox-span .checkbox-icon {
-    opacity: 1;
-    visibility: visible;
 }
 
 .review-form-policy-link {
